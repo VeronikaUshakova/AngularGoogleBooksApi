@@ -1,0 +1,16 @@
+.search {
+    margin: 1em;
+}
+
+.search__block {
+    display: flex;
+    margin: 1em;
+}
+
+app-list {
+    width: 100%;
+}
+
+app-list:first-child{
+    margin-right: 2em;
+}

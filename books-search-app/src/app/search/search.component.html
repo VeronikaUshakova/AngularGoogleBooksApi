@@ -1,0 +1,7 @@
+<div class="search">
+  <app-search-form (booksEvent)="receiveBooks($event)"></app-search-form>
+</div>
+<div class="search__block">
+    <app-list (bookEvent)="receiveBook($event)" [books]="books" [title]="titleBookList" [textButton]="textButtonBookList"></app-list>
+    <app-list (bookEvent)="receiveBook($event)" [books]="myBooks" [title]="titleMyBookList" [textButton]="textButtonMyBookList"></app-list>
+</div>

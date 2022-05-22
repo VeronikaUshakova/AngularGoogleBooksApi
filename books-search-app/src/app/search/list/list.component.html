@@ -1,0 +1,6 @@
+<div class="search__list">
+    <h2>{{title}}</h2>
+    <div class="search__list-book" *ngIf="books !== [{}]">
+        <app-book (bookEvent)="receiveBook($event)" *ngFor="let book of books" [book]=book [textButton]="textButton"></app-book>
+    </div>
+</div>

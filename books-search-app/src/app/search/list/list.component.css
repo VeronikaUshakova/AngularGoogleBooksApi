@@ -1,0 +1,12 @@
+.search__list {
+  width: 100%;
+  padding: 1em 0;
+}
+
+.search__list-book {
+  border: 1px solid black;
+  max-height: 600px;
+  padding: 1em;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}

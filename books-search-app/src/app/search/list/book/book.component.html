@@ -1,0 +1,18 @@
+<div class="search__book book">
+    <div class="book__text-main">
+        <h3 class="book__title" *ngIf="book.title">{{book.title}}</h3>
+        <h5 class="book__subtitle" *ngIf="book.subtitle">{{book.subtitle}}</h5>
+    </div>
+    <div class="book__details">
+      <div class="book__block-image" *ngIf="book.smallThumbnail">
+          <img class="book__image" src={{book.smallThumbnail}} alt="book">
+      </div>
+      <div class="book_text-additional">
+          <p class="book__description" *ngIf="book.description">{{book.description}}</p>
+          <p class="book__date" *ngIf="book.publishedDate">{{book.publishedDate}}</p>
+          <p class="book__authors" *ngIf="book.authors">{{book.authors}}</p>
+        <button class="book__button" id={{book.id}} (click)="handleClick($event)">{{textButton}}</button>
+      </div>
+    </div>
+  </div>
+

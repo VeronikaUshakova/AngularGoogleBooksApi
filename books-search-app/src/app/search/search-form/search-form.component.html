@@ -1,0 +1,4 @@
+<form [formGroup]="bookSearch" (ngSubmit)="onSubmit()" class="search__form">
+    <input type="text" formControlName="query" class="search__field">
+    <button class="search__button" type="submit" [disabled]="!bookSearch.valid || (bookSearch.value.query === '')">Search</button>
+</form>
